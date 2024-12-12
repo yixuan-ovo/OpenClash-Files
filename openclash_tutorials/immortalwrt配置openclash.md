@@ -1,11 +1,13 @@
 12.12更新:
-增加Steam规则,具体为除下载外都走代理,杜绝加速器
+增加Steam规则,具体为除下载外都走代理,杜绝加速器,steam代理组选择代理
 ```
 rules:
   - geosite:steam@cn, DIRECT
   - domain:steamserver.net, DIRECT
 ```
 经测试发现效果正常,等待后续使用验证
+
+下载游戏时连接内看不到下载的速度,应该是走了geosite:cn
 
 另:写法可能有所区别,未找到等价写法
 
