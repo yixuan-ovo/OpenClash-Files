@@ -1,3 +1,14 @@
+12.12更新:
+增加Steam规则,具体为除下载外都走代理,杜绝加速器
+```
+rules:
+  - geosite:steam@cn, DIRECT
+  - domain:steamserver.net, DIRECT
+```
+经测试发现效果正常,等待后续使用验证
+
+另:写法可能有所区别,未找到等价写法
+
 11.23更新:
 发现打开Gmail还是会弹出无网络连,真是闹麻了
 
