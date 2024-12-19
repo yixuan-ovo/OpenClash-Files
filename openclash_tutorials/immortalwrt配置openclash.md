@@ -88,7 +88,7 @@ openclash配置自定义策略集教程
     https://mirrors.cernet.edu.cn/immortalwrt
 
 ## 常用软件包名:
-luci-app-argon			argon主题
+luci-theme-argon			argon主题
 
 luci-app-adguardhome		自行github下载，链接:https://github.com/kongfl888/luci-app-adguardhome/releases
 
