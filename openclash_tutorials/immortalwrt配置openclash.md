@@ -94,7 +94,8 @@ luci-app-adguardhome		自行github下载，链接:https://github.com/kongfl888/l
 
 建议下载20221023，自带中文。最新版安装英文后再安装中文好像有冲突
 
-luci-app-arpbind			IP/MAC地址绑定
+*~~luci-app-arpbind			IP/MAC地址绑定~~*
+自带,不用搞这个
 
 luci-app-openclash			不解释
 
