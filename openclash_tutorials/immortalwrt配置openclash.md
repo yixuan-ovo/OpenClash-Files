@@ -3,8 +3,6 @@
 
 详见ImmortalWrt-Readme.md
 
-
-
 ## 2024.12.16更新:
 新增一条steam下载规则命中漏网之鱼
 ![alt text](./img/2.jpg)
@@ -79,9 +77,15 @@ openclash配置自定义策略集教程
 - https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki/OpenClash-%E8%AE%BE%E7%BD%AE%E6%95%99%E7%A8%8B
 
 ## 软件包替换源:
-将源地址 https://downloads.immortalwrt.org 或 https://mirrors.vsean.net/openwrt
+将源地址
+- https://downloads.immortalwrt.org
 
-更改为 https://mirrors.cernet.edu.cn/immortalwrt
+或
+- https://mirrors.vsean.net/openwrt
+
+修改为:
+        
+    https://mirrors.cernet.edu.cn/immortalwrt
 
 ## 常用软件包名:
 luci-app-argon			argon主题
