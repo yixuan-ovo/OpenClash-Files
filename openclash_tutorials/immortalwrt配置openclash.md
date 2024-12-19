@@ -1,3 +1,10 @@
+## 2024.12.19更新:
+增加不死uboot更新方式
+
+详见ImmortalWrt-Readme.md
+
+
+
 ## 2024.12.16更新:
 新增一条steam下载规则命中漏网之鱼
 ![alt text](./img/2.jpg)
