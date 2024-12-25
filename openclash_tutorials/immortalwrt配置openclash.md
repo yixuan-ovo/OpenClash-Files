@@ -1,19 +1,15 @@
-## 2024.12.20更新:
-完善覆写规则
-```
-rewrite:
-  - geosite:steam@cn,DIRECT
-  - gstore.val.manlaxy.com,DIRECT
+# 本教程已弃用,移步同目录下New_config
 
-+rules:
-  - DOMAIN-SUFFIX,yixr.fun,DIRECT
-  - DOMAIN-SUFFIX,chatboxai.app,DIRECT
-  - DOMAIN-SUFFIX,ingest.global-contribute.live-video.net,DIRECT
-  - DOMAIN-SUFFIX,immersivetranslate.com,DIRECT
-  - DOMAIN-SUFFIX,adblockplus.org,DIRECT
-  - DOMAIN-SUFFIX,download.nvidia.com,DIRECT
-  - DOMAIN-SUFFIX,gyg.si,DIRECT
-```
+***
+
+## 2024.12.25更新:
+修改覆写规则为获取在线yaml文件,进行自己编写并调用
+
+[路径(yx-direct.yaml):](/OpenClash_yx/direct_rules/yx-direct.yaml)
+
+配置图片待更新...
+
+~~## 2024.12.20更新(已弃用):~~
 
 ## 2024.12.19更新:
 增加不死uboot更新方式
@@ -107,9 +103,9 @@ openclash配置自定义策略集教程
 ## 常用软件包名:
 luci-theme-argon			argon主题
 
-luci-app-adguardhome		自行github下载，链接:https://github.com/kongfl888/luci-app-adguardhome/releases
+luci-app-adguardhome
 
-建议下载20221023，自带中文。最新版安装英文后再安装中文好像有冲突
+~~建议下载20221023，自带中文。最新版安装英文后再安装中文好像有冲突~~
 
 *~~luci-app-arpbind			IP/MAC地址绑定~~*
 自带,不用搞这个
@@ -153,11 +149,11 @@ br-lan的网段不可以和wan的网段相同
 # openclash插件设置:
 
 ## 插件-模式设置
-勾选使用meta内核，需要提前下载并上传meta内核文件
+~~勾选使用meta内核，需要提前下载并上传meta内核文件~~
 
-运行模式:Fake-IP(混合)模式
+~~运行模式:Fake-IP(混合)模式~~
 
-网络栈类型:mixed(2024.11.7版本openclash仅剩meta内核)
+~~网络栈类型:mixed(2024.11.7版本openclash仅剩meta内核)~~
 
 勾选UDP流量转发
 
@@ -165,12 +161,18 @@ br-lan的网段不可以和wan的网段相同
 
 ![img_7.png](./img/img_7.png)
 
+### 2024.12.25修改:
+新版本默认只有meta内核,使用fakeip增强模式就行
+
 ## 插件-流量控制
 勾选路由本机代理、禁用QUIC、绕过服务器地址、实验性绕过中国大陆IP（配置延迟低的dns）、仅允许内网
 
-仅允许内网下方选择wan接口名字为wan（个人配置不同）
+仅允许内网下方选择wan接口名字为pppoe-wan（个人配置不同）
 
 ![img_8.png](./img/img_8.png)
+
+### 2024.12.25
+lan接口配置为br-lan
 
 ## 插件-DNS设置
 先选择使用Dnsmasq进行转发，彻底配置好之后选择停用
